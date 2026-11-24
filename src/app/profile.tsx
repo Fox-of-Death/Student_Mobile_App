@@ -4,7 +4,9 @@ export default function profile() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>My Profile</Text>
-      <Text style={styles.subtitle}>My First App</Text>
+      <Text style={styles.subtitle}>Ball</Text>
+      <Text style={styles.textbody}>Mr.Weerayut Pliankaew</Text>
+      <Text style={styles.textbody}>A</Text>
     </View>
   )
 }
@@ -12,7 +14,7 @@ export default function profile() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
         backgroundColor: "#f1f5f9",
     },
@@ -25,5 +27,9 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: "#475569",
         marginTop: 8,
+    },
+    textbody: {
+      fontSize: 18,
+      justifyContent:"space-around"
     }
 })
